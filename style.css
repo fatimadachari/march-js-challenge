@@ -1,0 +1,229 @@
+/* PADROES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C1C1C;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-family: "Anta", sans-serif;
+    color: #F7E018;
+}
+
+p,
+ul {
+    color: #8b8b8b;
+}
+
+section {
+    padding: 20px 50px;
+}
+
+/* NAV */
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181B;
+    padding: 20px;
+}
+
+#nav_menu {
+    margin: auto;
+
+}
+
+#nav_menu li {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    font-family: "Anta", sans-serif;
+
+}
+
+#nav_menu li a {
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
+#nav_menu li a:hover {
+    color: #F7E018;
+}
+
+/* HEADER */
+
+#header {
+    padding: 70px 100px;
+    text-align: center;
+}
+
+#header span {
+    background-color: #F7E018;
+    color: #18181B;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+#header h1 {
+    font-size: 40px;
+    color: #e4e4e4;
+    margin: 20px auto;
+}
+
+#header h2 {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#header p {
+    font-size: 15px;
+    color: #8b8b8b;
+    width: 650px;
+    line-height: 20px;
+    margin: auto;
+}
+
+/* DESAFIO */
+#desafio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#desafio span {
+    font-weight: bold;
+    font-family: "Anta", sans-serif;
+
+}
+
+#goal-block,
+#how-works-block,
+#structure-block {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    margin: auto 30px;
+    padding: 30px;
+    background-color: #3F3F46;
+    box-shadow: 0px 7px 38px 22px #1a1a1a;
+    line-height: 27px;
+}
+
+#how-works-block ul {
+    list-style: none;
+}
+
+
+/* PROJETOS */
+
+#projetos {
+    text-align: center;
+}
+
+#projetos h2 {
+    margin-top: 30px;
+}
+
+#projetos p {
+    margin: 20px;
+}
+
+#projetos span {
+    border: 1.5px solid #F7E018;
+    color: #e4e4e4;
+    border-radius: 20px;
+    font-family: "Anta", sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+#projetos span:hover {
+    background-color: #3F3F46;
+    cursor: default;
+}
+
+#block-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px auto;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.block-projects_card {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #3F3F46;
+}
+
+.block-projects_card img {
+    height: 250px;
+    position: relative;
+}
+
+.block-projects_card_title {
+    display: none;
+}
+
+.block-projects_card:hover .block-projects_card_title {
+    display: block;
+    height: 75px;
+    width: 250px;
+    padding: 20px;
+    background-color: #3f3f4648;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    margin-top: -75px;
+    color: #e4e4e4;
+    font-family: "Anta", sans-serif;
+}
+
+/* SOBRE */
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+
+#about_image img{
+    height: 350px;
+    margin: auto 70px auto 100px;
+}
+
+#about h2 {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#about span {
+    color: #e4e4e4;
+    font-size: 40px;
+}
+
+/* RODAPE */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181B;
+    padding: 20px;
+    font-family: "Anta", sans-serif;
+}
+
+#footer p {
+    color: #e4e4e4;
+}
