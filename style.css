@@ -213,6 +213,20 @@ span:hover {
     font-family: "Anta", sans-serif;
 }
 
+@media screen and (max-width:800px) {
+    #projetos {
+        margin: 50px 10px;
+    }
+
+    #block-projects {
+        margin: 30px 0;
+    }
+    
+    .block-projects_card {
+        margin: 20px 10px;
+    }
+}
+
 /* SOBRE */
 #sobre {
     display: flex;
@@ -271,21 +285,15 @@ span:hover {
 
 @media screen and (max-width:650px) {
     #sobre {
-        flex-wrap: wrap;
         padding: 0 30px;
     }
 
-    #about_image,
-    #about {
-        width: 100%;
-    }
-    
     #about_image{
-        text-align: center;
+        display: none;
     }
 
-    #about p{
-        text-align: justify;
+    #about {
+        width: 100%;
     }
 }
 
