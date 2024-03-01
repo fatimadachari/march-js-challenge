@@ -2,6 +2,8 @@
 
 Esse será um desafio onde me proponho a construir 31 projetos em JavaScript em 31 dias durante o mês de março. Este repositório é tanto um registro da minha jornada de aprendizado quanto uma coleção de projetos inspiradores para outros desenvolvedores.
 
+Para visualizar o site do projeto, acesse: [https://fatimadachari.github.io/march-js-challenge/](https://fatimadachari.github.io/march-js-challenge/)
+
 ## Objetivo
 
 O objetivo deste desafio é promover uma imersão profunda em JavaScript, abordando diferentes aspectos da linguagem, desde fundamentos básicos até recursos avançados, bibliotecas e frameworks. Cada projeto diário serve como uma oportunidade de aplicar conceitos, experimentar novas ideias e superar desafios únicos.
@@ -20,13 +22,8 @@ Cada projeto terá sua pasta dedicada dentro deste repositório, onde você enco
 
 Aqui está uma lista preliminar dos projetos planejados. Esta lista pode ser atualizada ao longo do desafio:
 
-| Dia  | Projeto         | Descrição              | Link para o Projeto |
-|------|-----------------|------------------------|---------------------|
-| 01   | [DRUMKIT](#)    | Um Drum Kit interativo que transforma as teclas do teclado em sons de bateria, permitindo criar ritmos dinâmicos com respostas visuais para cada batida.  | [Link](#)           |
-| 02   | [ToDo List](#) | Lista de tarefas que oferece funções de adicionar, marcar como concluído e remover tarefas, com dados persistentes no armazenamento local para organização e produtividade diárias.  | [Link](#)           |
-| ...  | ...             | ...                    | ...                 |
-
-*Os links dos projetos serão atualizados diariamente à medida que forem sendo completados.*
+- Dia 1: DRUMKIT - Um Drum Kit interativo que transforma as teclas do teclado em sons de bateria, permitindo criar ritmos dinâmicos com respostas visuais para cada batida.
+- Dia 1: TODO LIST - Lista de tarefas que oferece funções de adicionar, marcar como concluído e remover tarefas, com dados persistentes no armazenamento local para organização e produtividade diárias. 
 
 ## Tecnologias
 
@@ -46,7 +43,7 @@ Sinta-se à vontade para explorar os projetos, usar o código como inspiração 
 
 Se você quiser entrar em contato comigo, seja para discutir os projetos, propor ideias ou qualquer outra coisa, fique à vontade para me encontrar nas redes sociais ou enviar um e-mail.
 
-- **GitHub:** [fatimadachari ](https://github.com/fatimadachari)
+- **GitHub:** [fatimadachari](https://github.com/fatimadachari)
 - **LinkedIn:** [fatima-dachari](https://www.linkedin.com/in/fatima-dachari/)
 - **E-mail:** fatima.s.dachari@gmail.com
 
