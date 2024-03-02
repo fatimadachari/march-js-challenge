@@ -83,6 +83,9 @@ opacity: 0;
 
 .done {
     background-color: rgba(240, 72, 198, 0.301);
+}
+
+.done p{
     text-decoration: line-through;
 }
 
