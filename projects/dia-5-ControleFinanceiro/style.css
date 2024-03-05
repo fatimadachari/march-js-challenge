@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #1C1C1C;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+body a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 70px;
+    text-align: left;
+}
+
+.sub-container {
+    flex-direction: column;
+    display: flex;
+    float: left;
+    width: 35%;
+}
+
+.content {
+    float: right;
+    width: 65%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.total-amount-container,
+.user-amount-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 50px 0;
+    padding: 20px;
+    background-color: #3F3F46;
+    color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 0.6em 1.2em rgba(0, 0, 0, 0.486);
+}
+
+.sub-container h3,
+.sub-container p {
+    margin-bottom: 10px;
+}
+
+.sub-container p {
+    font-size: 13px;
+}
+
+.sub-container input {
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.sub-container input:focus-visible {
+    outline: none;
+}
+
+.sub-container button {
+    background-color: #5da761;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sub-container button:hover {
+    background-color: #f1f1f1;
+    color: #5da761;
+    font-weight: bold;
+}
+
+.output-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #3F3F46;
+    color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 0.6em 1.2em rgba(0, 0, 0, 0.486);
+}
+
+.output-container #p-amount,
+.output-container #amount {
+    color: #ffb546;
+}
+
+.output-container #p-expenditure-value,
+.output-container #expenditure-value {
+    color: #ff465a;
+}
+
+.output-container #p-balance-amount,
+.output-container #balance-amount {
+    color: #5da761;
+}
+
+.list {
+    background-color: #3F3F46;
+    color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0.6em 1.2em rgba(0, 0, 0, 0.486);
+}
+
+.list h3 {
+    margin-bottom: 10px;
+}
+
+.sublist-content {
+    width: 100%;
+    border-left: 0.3em solid #5da761;
+    margin-bottom: 0.6em;
+    padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+.product {
+    font-weight: 500;
+    color: #f1f1f1;
+}
+
+.amount {
+    color: #f1f1f1;
+    margin-left: 20%;
+}
+
+.icons-container {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+
+.product-title {
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    color: #ff465a;
+}
+
+.edit {
+    margin-left: auto;
+}
+
+.edit,
+.delete {
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #5da761;
+}
