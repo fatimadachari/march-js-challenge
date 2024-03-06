@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarchJSChallenge dia 6: Pomodoro Timer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../../img/js.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h1>Pomodoro Timer</h1>
+                <div class="card-header-buttons">
+
+                    <button id="buttonTypePomodoro" class="active" onclick="setPomodoroType(TIMER_TYPE_POMODORO);">
+                        Work
+                    </button>
+
+                    <button id="buttonTypeShortBreak" onclick="setPomodoroType(TIMER_TYPE_SHORT_BREAK);">
+                        Break
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="card-body">
+
+                <div id="circularProgressBar" class="progress-bar">
+                    <div class="progress-bar-inner">
+                        <h2 class="progress-value">25:00</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-footer">
+
+                <button class="btn-sucess" onclick="startTimer();">Start</button> |
+                <button class="btn-danger" onclick="stopTimer();">Stop</button> |
+                <button onclick="resetTimer();">Reset</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="../../projetos.html">Voltar para a página do desafio</a>
+    <script src="./script.js"></script>
+</body>
+
+</html>
