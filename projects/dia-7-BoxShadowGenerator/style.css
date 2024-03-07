@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: #505050;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to left, #46b997, #4faabe);
+}
+
+body a {
+    color: #dbdbdb;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #EBEBEB;
+    padding: 0px 50px 30px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+.result {
+    padding: 70px;
+}
+
+#element {
+    height: 50px;
+    width: 50px;
+    background-color: #4faabe;
+    margin: auto;
+}
+
+.sliders {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 20px 15px;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #4faabe;
+    margin-top: -4px;
+}
+
+input[type=color] {
+    border: none;
+}
+
+.code-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+textarea {
+    resize: none;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.code-wrapper button {
+    width: 18%;
+    background-color: #4faabe;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.code-wrapper button:hover {
+    background-color: #4faabeaf;
+}
