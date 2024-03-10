@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarchJSChallenge dia 10: Editor de Imagem</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../../img/js.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="editor-container">
+            <div class="image-container">
+                <img id="image" />
+            </div>
+
+            <input type="file" id="file" accept="image/*" />
+            
+            <label for="file">Abrir uma imagem</label>
+
+            <div class="options-btn hide">
+                <button id="rotate-left">
+                    <img src="./images/rotate-left.png" />
+                </button>
+                <button id="rotate-right">
+                    <img src="./images/rotate-right.png" />
+                </button>
+                <button id="scale-X-button">
+                    <img src="./images/flip-hori.png" />
+                </button>
+                <button id="scale-Y-button">
+                    <img src="./images/flip-ver.png" />
+                </button>
+                <button class="aspect-ratio-btns">16:9</button>
+                <button class="aspect-ratio-btns">4:3</button>
+                <button class="aspect-ratio-btns">1:1</button>
+                <button class="aspect-ratio-btns">2:3</button>
+                <button class="aspect-ratio-btns">Free</button>
+            </div>
+
+            <div class="action-btns">
+                <button id="preview" class="hide">Visualizar</button>
+                <a href="" id="download" class="hide">Download</a>
+            <a href="../../projetos.html" id="link">Voltar para a página do desafio</a>
+
+            </div>
+        </div>
+        
+        <div class="preview-container">
+            <img id="preview-image" />
+        </div>
+        
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
