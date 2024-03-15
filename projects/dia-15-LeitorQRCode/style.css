@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 50%, rgba(72, 48, 120, 1) 50%);
+}
+
+body a {
+    text-decoration: none;
+    margin-top: 20px;
+    color: rgba(72, 48, 120, 1);
+}
+
+.wrapper {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    height: 270px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.37);
+    transition: height 0.2s ease;
+}
+
+.wrapper.active {
+    height: 525px;
+}
+
+.wrapper form {
+    height: 210px;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active form {
+    height: 225px;
+    pointer-events: none;
+}
+
+form img {
+    display: none;
+    max-width: 148px;
+}
+
+.wrapper.active form img {
+    display: block;
+}
+
+.wrapper.active form .content {
+    display: none;
+}
+
+form .content i {
+    color: rgba(72, 48, 120, 1);
+    font-size: 55px;
+}
+
+form .content p {
+    color: rgba(72, 48, 120, 1);
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.wrapper .details {
+    opacity: 0;
+    margin-top: 25px;
+    pointer-events: none;
+}
+
+.wrapper.active .details {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+
+.details textarea {
+    width: 100%;
+    height: 128px;
+    outline: none;
+    resize: none;
+    color: #252525;
+    font-size: 18px;
+    background: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid rgba(72, 48, 120, 1);
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+textarea:hover::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea:hover::-webkit-scrollbar-track {
+    background: none;
+}
+
+textarea:hover::-webkit-scrollbar-thumb {
+    background: #a8a8a8;
+    border-radius: 8px;
+}
+
+.details .buttons {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button {
+    height: 55px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background: rgba(72, 48, 120, 1);
+    transition: transform 0.3s ease;
+    width: calc(100% / 2 - 10px);
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
