@@ -13,7 +13,7 @@ let currentType = '';
 let isHome = false;
 
 const fetchContent = (search, type, page, isHome = false) => {
-    let url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}&page=${page}`;
+    let url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${search}&page=${page}`;
 
     if (type) {
         url += `&type=${type}`;
