@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.getElementById('signup-form');
     const signinForm = document.getElementById('signin-form');
 
-    // Função para registrar um novo usuário
     signupForm?.addEventListener('submit', function(e) {
         e.preventDefault();
         const name = document.getElementById('signup-name').value;
@@ -18,12 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Email já cadastrado!');
         } else {
             localStorage.setItem(email, JSON.stringify(userData));
-            //alert('Cadastro realizado com sucesso!');
-            window.location.href = './login.html'; // Redireciona para a página de login após o cadastro
+            localStorage.setItem('currentUser', name); // Armazena o nome do usuário no localStorage
+            window.location.href = './login.html'; 
         }
     });
 
-    // Função para verificar o login do usuário
     signinForm?.addEventListener('submit', function(e) {
         e.preventDefault();
         const email = document.getElementById('signin-email').value;
@@ -33,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (userData && userData.password === password) {
             //alert('Login realizado com sucesso!');
-            // Redirecione o usuário para a página desejada após o login
-            window.location.href = '../home.html'; // Substitua 'pagina_principal.html' pelo caminho correto
+            localStorage.setItem('currentUser', userData.name); // Armazena o nome do usuário logado no localStorage
+            window.location.href = 'home.html'; 
         } else {
             alert('Email ou senha incorretos!');
         }
