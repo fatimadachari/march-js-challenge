@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarchJSChallenge dia 21: Crypto Website</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../../../img/js.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-login">
+        <div class="header-wrapper">
+            <header class="header flex">
+                <div class="container w-full flex-1 flex">
+                    <div class="header-content w-full flex-1 flex flex-col">
+                        <nav class="navbar flex items-center justify-between">
+                            <div class="brand-and-toggler flex items-center justify-between w-full">
+                                <a href="../index.html" class="navbar-brand flex items-center">
+                                    <img src="../assets/icons/site_icon.svg">
+                                    <span class="brand-text">Cripto</span>
+                                </a>
+                                <button type="button" class="navbar-show-btn">
+                                    <img src="../assets/icons/menu_icon.svg" />
+                                </button>
+                            </div>
+
+                            <div class="navbar-list-wrapper flex items-center">
+                                <ul class="nav-list flex items-center">
+                                    <button type="button" class="navbar-hide-btn">
+                                        <img src="../assets/icons/close.svg" />
+                                    </button>
+                                    <li class="nav-item">
+                                        <a href="../index.html#comprar-vender" class="nav-link text-base no-wrap">Comprar /
+                                            Vender</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../index.html#suporte" class="nav-link text-base no-wrap">Suporte</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../index.html#mercado" class="nav-link text-base no-wrap">Mercado</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../index.html#crescer" class="nav-link text-base no-wrap">Crescer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../index.html#contato" class="nav-link text-base no-wrap">Contato</a>
+                                    </li>
+                                </ul>
+
+                                <div class="sign-btns flex items-center">
+                                    <a href="./login.html" class="btn text-base">Entrar</a>
+                                    <a href="./cadastro.html"
+                                        class="btn btn-g-blue-veronica text-base">Cadastro</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="form-container sign-in">
+            <form id="signin-form">
+                <h1>Entrar</h1>
+                <input type="email" placeholder="Email" id="signin-email">
+                <input type="password" placeholder="Senha" id="signin-password"><br>
+                <a href="./cadastro.html">Não possui uma conta? <span>Cadastre-se!</span></a><br>
+                <button type="submit" class="btn btn-g-blue-veronica text-base">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
