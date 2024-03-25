@@ -11,7 +11,7 @@ const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
-const songs = ['hey', 'summer', 'ukulele'];
+const songs = ['Benson Boone - Beautiful Things', 'Filipe Ret - Amor Livre', 'MAX - STUPID IN LOVE feat. HUH YUNJIN'];
 
 let songIndex = 2;
 
@@ -20,7 +20,7 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
 	title.innerText = song;
 	audio.src = `music/${song}.mp3`;
-	cover.src = `images/${song}.jpg`;
+	cover.src = `images/${song}.jpeg`;
 }
 
 function playSong() {
