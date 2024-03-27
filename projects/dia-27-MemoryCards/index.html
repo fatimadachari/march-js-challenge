@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarchJSChallenge dia 27: Memory Cards</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="../../img/js.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <button id="clear" class="clear">
+    <i class="fas fa-trash"></i> Limpar Cartões
+  </button>
+  <a href="../../projetos.html"><button id="back" class="back">
+    <i class="fas fa-arrow-left"></i> Voltar para a página do desafio
+  </button></a>
+
+  <div class="title">
+    <h1>Cartões de Memória</h1>
+    <button id="show">
+      <i class="fas fa-plus"></i>
+    </button>
+  </div>
+
+  <div id="cards-container" class="cards">
+
+  </div>
+
+  <div class="navigation">
+    <button id="prev" class="nav-button">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <p id="current"></p>
+
+    <button id="next" class="nav-button">
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+
+  <div id="add-container" class="add-container">
+    <div class="title">
+      <h1>Adicionar Novo Cartão</h1>
+      <button id="hide">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="form-group">
+      <label for="question">Pergunta</label>
+      <textarea id="question" placeholder="Digite a pergunta..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="answer">Resposta</label>
+      <textarea id="answer" placeholder="Digite a resposta..."></textarea>
+    </div>
+
+    <button id="add-card">
+      <i class="fas fa-plus"></i> Adicionar Cartão
+    </button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
